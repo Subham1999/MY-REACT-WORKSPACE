@@ -9,7 +9,8 @@ class LifeCycle extends React.Component {
 
     this.state = {
       myName: 'Subham Santra',
-      val1: '8181',
+      val1: 'It will be changed! wait 4s',
+      val2: 'static change??',
     };
     console.log('constructor');
   }
@@ -19,7 +20,7 @@ class LifeCycle extends React.Component {
    */
   static getDerivedStateFromProps(props, state) {
     console.log('getDerivedStateFromProps');
-    return state;
+    return { val2: 'Other change' };
   }
 
   /**
@@ -31,6 +32,7 @@ class LifeCycle extends React.Component {
       <React.Fragment>
         <h4>Rendered {this.state.myName}</h4>
         <h4>componentDidMount change : {this.state.val1}</h4>
+        <h4>static change : {this.state.val2}</h4>
       </React.Fragment>
     );
   }
@@ -42,9 +44,9 @@ class LifeCycle extends React.Component {
     console.log('componentDidMount');
     setTimeout(() => {
       this.setState({
-        val1: 718171,
+        val1: 'It is changed',
       });
-    }, 3000);
+    }, 4000);
   }
 }
 
