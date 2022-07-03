@@ -8,6 +8,10 @@ import ListComponent from './components/lesson_5/ListComponent';
 import ListComponentAdv from './components/lesson_5/ListComponentAdv';
 import FormCheck from './components/lesson_5/FormCheck';
 import LifeCycle from './components/lesson_6/LifeCycle';
+// import ClickCounter from './components/HOC/without_hoc/ClickCounter';
+// import HoverCounter from './components/HOC/without_hoc/HoverCounter';
+import ClickCounter from './components/HOC/with_hoc/ClickCounter';
+import HoverCounter from './components/HOC/with_hoc/HoverCounter';
 
 export default function App() {
   let appName = 'My First App';
@@ -19,7 +23,9 @@ export default function App() {
       {/* <ListComponent /> */}
       {/* <ListComponentAdv /> */}
       {/* <FormCheck /> */}
-      <LifeCycle />
+      {/* <LifeCycle /> */}
+      <ClickCounter />
+      <HoverCounter />
     </div>
   );
 }
