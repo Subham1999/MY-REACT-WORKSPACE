@@ -12,6 +12,7 @@ import LifeCycle from './components/lesson_6/LifeCycle';
 // import HoverCounter from './components/HOC/without_hoc/HoverCounter';
 import ClickCounter from './components/HOC/with_hoc/ClickCounter';
 import HoverCounter from './components/HOC/with_hoc/HoverCounter';
+import ErrParent from './components/err_boundary/ErrParent';
 
 export default function App() {
   let appName = 'My First App';
@@ -24,8 +25,9 @@ export default function App() {
       {/* <ListComponentAdv /> */}
       {/* <FormCheck /> */}
       {/* <LifeCycle /> */}
-      <ClickCounter />
-      <HoverCounter />
+      {/* <ClickCounter /> */}
+      {/* <HoverCounter /> */}
+      <ErrParent />
     </div>
   );
 }
