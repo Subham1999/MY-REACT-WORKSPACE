@@ -13,12 +13,12 @@ class ErrParent extends React.Component {
       <div className="card shadow">
         <div className="card-body">
           <ErrorBoundary>
-            <ErrChild name="Subham" showErr="true" />
-          </ErrorBoundary>
-          <ErrorBoundary>
+            <ErrChild name="Subham" showErr="false" />
+            {/* </ErrorBoundary> */}
+            {/* <ErrorBoundary> */}
             <ErrChild name="Madhusudan" showErr="false" />
-          </ErrorBoundary>
-          <ErrorBoundary>
+            {/* </ErrorBoundary> */}
+            {/* <ErrorBoundary> */}
             <ErrChild name="Raghvendra" showErr="false" />
           </ErrorBoundary>
         </div>

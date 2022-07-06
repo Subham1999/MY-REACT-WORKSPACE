@@ -13,6 +13,7 @@ import LifeCycle from './components/lesson_6/LifeCycle';
 import ClickCounter from './components/HOC/with_hoc/ClickCounter';
 import HoverCounter from './components/HOC/with_hoc/HoverCounter';
 import ErrParent from './components/err_boundary/ErrParent';
+import MainPage from './components/crud/MainPage';
 
 export default function App() {
   let appName = 'My First App';
@@ -27,7 +28,8 @@ export default function App() {
       {/* <LifeCycle /> */}
       {/* <ClickCounter /> */}
       {/* <HoverCounter /> */}
-      <ErrParent />
+      {/* <ErrParent /> */}
+      <MainPage />
     </div>
   );
 }
