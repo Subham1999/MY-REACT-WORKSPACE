@@ -106,6 +106,7 @@ class MainPage extends React.Component {
                 value={this.state.name}
                 onChange={this.onNameChange}
               />
+              <br />
               <select
                 name="department"
                 id="department"
