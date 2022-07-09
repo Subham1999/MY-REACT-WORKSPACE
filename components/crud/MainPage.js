@@ -18,9 +18,9 @@ const StudentElement = ({ name, dept }) => {
   console.log('Rendering -- ', name);
   return (
     <div className="card shadow">
-      <div className="card-body justify-content-between">
-        <span className="d-flex">{name}</span>
-        <span className="d-flex">{dept}</span>
+      <div className="card-body d-flex justify-content-between">
+        <span>{name}</span>
+        <span>{dept}</span>
       </div>
     </div>
   );
@@ -87,7 +87,7 @@ class MainPage extends React.Component {
       <StudentElement
         name={student.name}
         dept={student.dept}
-        key={this.generateKey}
+        key={this.generateKey()}
       />
     ));
 
