@@ -11,7 +11,7 @@ const DepartmentList = [
 ];
 
 /**
- * Drawback of this approach is it re-renders all the student elements 
+ * Drawback of this approach is it re-renders all the student elements
  * When there is any input change
  */
 const StudentElement = ({ name, dept }) => {
