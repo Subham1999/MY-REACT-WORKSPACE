@@ -13,6 +13,8 @@ class MainAdv extends React.Component {
 
     this.incrementSomeOtherValueByOne =
       this.incrementSomeOtherValueByOne.bind(this);
+
+    this.changeName = this.changeName.bind(this);
   }
 
   incrementSomeOtherValueByOne() {
@@ -20,6 +22,12 @@ class MainAdv extends React.Component {
     this.setState({
       someOtherValue: someOtherValue + 1,
     });
+  }
+
+  changeName() {
+    const { nameList } = this.state;
+    nameList[0] = 'Subham Santra';
+    this.setState({ nameList: nameList });
   }
 
   componentDidMount() {
@@ -34,13 +42,15 @@ class MainAdv extends React.Component {
     console.log('%%%%%%%% MainAdv rendered');
     const NormalNameList = this.state.nameList?.map((name) => (
       // <NormalNameComponent name={name} />
-      <PureNameComponent name={name} key={name}/>
+      <PureNameComponent name={name} key={name} />
     ));
 
     return (
       <div>
         <p>Current Count : {this.state.someOtherValue}</p>
         <button onClick={this.incrementSomeOtherValueByOne}>click me</button>
+        <br />
+        <button onClick={this.changeName}>change name</button>
         <br />
         <div>{NormalNameList}</div>
       </div>
