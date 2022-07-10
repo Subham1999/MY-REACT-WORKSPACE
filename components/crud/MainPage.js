@@ -83,7 +83,7 @@ class MainPage extends React.Component {
       }
     });
 
-    const StudentListElement = this.state.students.map((student) => (
+    const StudentListElement = this.state.students?.map((student) => (
       <StudentElement
         name={student.name}
         dept={student.dept}

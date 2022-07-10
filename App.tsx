@@ -14,6 +14,7 @@ import ClickCounter from './components/HOC/with_hoc/ClickCounter';
 import HoverCounter from './components/HOC/with_hoc/HoverCounter';
 import ErrParent from './components/err_boundary/ErrParent';
 import MainPage from './components/crud/MainPage';
+import MainAdv from './components/advanced/MainAdv';
 
 export default function App() {
   let appName = 'My First App';
@@ -29,7 +30,8 @@ export default function App() {
       {/* <ClickCounter /> */}
       {/* <HoverCounter /> */}
       {/* <ErrParent /> */}
-      <MainPage />
+      {/* <MainPage /> */}
+      <MainAdv />
     </div>
   );
 }
