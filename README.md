@@ -1,5 +1,5 @@
 # react-ts-73ss6w
 
-## Author : Subham Santra
+## Author : <b>Subham Santra</b>
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-ts-73ss6w)
