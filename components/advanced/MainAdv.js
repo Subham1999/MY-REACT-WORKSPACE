@@ -34,7 +34,7 @@ class MainAdv extends React.Component {
     console.log('%%%%%%%% MainAdv rendered');
     const NormalNameList = this.state.nameList?.map((name) => (
       // <NormalNameComponent name={name} />
-      <PureNameComponent name={name} />
+      <PureNameComponent name={name} key={name}/>
     ));
 
     return (
