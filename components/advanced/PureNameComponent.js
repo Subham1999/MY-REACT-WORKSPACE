@@ -22,7 +22,13 @@ class PureNameComponent extends React.PureComponent {
   render() {
     console.log(`%%%%%%% PureNameComponent render ${this.props.name}`);
     const { name } = this.props;
-    return <div>{name}</div>;
+    return (
+      <div className='card shadow'>
+        <div className="card-body">
+          In PureComponent Name is {name} 
+        </div>
+      </div>
+    );
   }
 }
 

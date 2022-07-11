@@ -41,7 +41,9 @@ class MainAdv extends React.Component {
   render() {
     console.log('%%%%%%%% MainAdv rendered');
     const NormalNameList = this.state.nameList?.map((name) => (
-      // <NormalNameComponent name={name} />
+      <NormalNameComponent name={name} />
+    ));
+    const PureNameList = this.state.nameList?.map((name) => (
       <PureNameComponent name={name} key={name} />
     ));
 
@@ -52,7 +54,10 @@ class MainAdv extends React.Component {
         <br />
         <button onClick={this.changeName}>change name</button>
         <br />
-        <div>{NormalNameList}</div>
+        <div class="row">
+          <div className="col-md-6">{NormalNameList}</div>
+          <div className="col-md-6">{PureNameList}</div>
+        </div>
       </div>
     );
   }

@@ -17,7 +17,11 @@ class NormalNameComponents extends React.Component {
   render() {
     console.log(`%%%%%%% NormalNameComponents render ${this.props.name}`);
     const { name } = this.props;
-    return <div>{name}</div>;
+    return (
+      <div className="card shadow">
+        <div className="card-body">In NormalComponent Name is {name}</div>
+      </div>
+    );
   }
 }
 
