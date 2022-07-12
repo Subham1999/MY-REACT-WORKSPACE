@@ -17,6 +17,7 @@ import MainPage from './components/crud/MainPage';
 import MainAdv from './components/advanced/MainAdv';
 import HookCounter from './hookcomponents/HookCounter';
 import HookInput from './hookcomponents/HookInput';
+import HookArray from './hookcomponents/HookArray';
 
 export default function App() {
   let appName = 'My First App';
@@ -35,7 +36,8 @@ export default function App() {
       {/* <MainPage /> */}
       {/* <MainAdv /> */}
       {/* <HookCounter /> */}
-      <HookInput />
+      {/* <HookInput /> */}
+      <HookArray />
     </div>
   );
 }
