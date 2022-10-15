@@ -18,6 +18,7 @@ import MainAdv from './components/advanced/MainAdv';
 import HookCounter from './hookcomponents/HookCounter';
 import HookInput from './hookcomponents/HookInput';
 import HookArray from './hookcomponents/HookArray';
+import UserContextDemo from './hookcomponents/UserContextDemo';
 
 export default function App() {
   let appName = 'My First App';
@@ -37,7 +38,8 @@ export default function App() {
       {/* <MainAdv /> */}
       {/* <HookCounter /> */}
       {/* <HookInput /> */}
-      <HookArray />
+      {/* <HookArray /> */}
+      <UserContextDemo />
     </div>
   );
 }
