@@ -7,24 +7,6 @@ const personList = [
     manager: 'Madhusudan Rao K',
     org: 'Cognizant',
   },
-  {
-    empId: 91001,
-    name: 'Archana Kumari',
-    manager: 'Babita Nayak',
-    org: 'Cognizant',
-  },
-  {
-    empId: 91002,
-    name: 'Shreya Bhattacharya',
-    manager: 'Babita Nayak',
-    org: 'Cognizant',
-  },
-  {
-    empId: 91003,
-    name: 'Hemachander R',
-    manager: 'Babita Nayak',
-    org: 'Cognizant',
-  },
 ];
 
 const PersonCard = (props) => {
